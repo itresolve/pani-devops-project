@@ -1,7 +1,7 @@
  # Windows Tools
  
 ##### Install chocolatey from the instructions given in the link below.
-[This is the link to the Community Package Repository with over 9000 packages](https://community.chocolatey.org/packages)
+[This is the Community Package Repository with over 9000 packages](https://community.chocolatey.org/packages)
 ###### Run all the below commands on Powershell (Open Powershell as Admin)
 ```
 choco install virtualbox
