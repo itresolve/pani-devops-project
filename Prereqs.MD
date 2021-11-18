@@ -1,7 +1,7 @@
  # Windows Tools
  
 ##### Install chocolatey from the instructions given in the link below.
-Click here to see [HowIntall chocolatey on window](https://chocolatey.org/install)
+Click here to see [How Intall chocolatey on window](https://chocolatey.org/install)
 
 ##### Below link help to search and install any package on window
 [This is the Community Package Repository with over 9000 packages](https://community.chocolatey.org/packages)
