@@ -27,8 +27,9 @@ Make sure to reboot your laptop when installation of all the above is done.
 - SonarCloud
 
 
-## AWS SETUP
+## AWS SETUP 
 - Free Tier Account
 - IAM with MFA
 - Billing Alarm
 - Certificate Setup
+[aws setup step](https://github.com/itresolve/pani-devops-project/blob/prereqs/AWS%20SETUP.pdf)
