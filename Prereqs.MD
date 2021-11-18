@@ -20,8 +20,15 @@ choco install sublimetext3.app
 Make sure to reboot your laptop when installation of all the above is done.
 
 
-## SIGN UP
+## SIGN UP TO:
 - GitHub
 - Godaddy DOMAIN PURCHASE
 - DockerHub
 - SonarCloud
+
+
+## AWS SETUP
+- Free Tier Account
+- IAM with MFA
+- Billing Alarm
+- Certificate Setup
