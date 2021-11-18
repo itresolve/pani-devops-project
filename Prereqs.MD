@@ -18,3 +18,10 @@ choco install intellijidea-community
 choco install sublimetext3.app
 ```
 Make sure to reboot your laptop when installation of all the above is done.
+
+
+## SIGN UP
+- GitHub
+- Godaddy DOMAIN PURCHASE
+- DockerHub
+- SonarCloud
