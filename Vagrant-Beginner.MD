@@ -24,6 +24,7 @@ Turn ON Hyper-V in Windows features and restart laptop
 
 #### Create Vagranfile mannually
 See bellow file
+
 ![More here](https://github.com/itresolve/pani-devops-project/blob/prereqs/vagrant1.PNG)
 
 
