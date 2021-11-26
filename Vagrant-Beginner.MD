@@ -26,5 +26,5 @@ See bellow file
 
 ## Vagrant cloud 
 Find OS images to this link: 
-![More here](https://app.vagrantup.com/boxes/search)
+[More here](https://app.vagrantup.com/boxes/search)
 
