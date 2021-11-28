@@ -44,6 +44,8 @@ Setup should be done in below mentioned order
 4. Tomcat (Application SVC)
 5. Nginx (Web SVC)
 
+![This is the Web Architecture](https://github.com/itresolve/pani-devops-project/blob/local-setup/vagrant/Manual_provisioning/archtect.PNG)
+
 #### MYSQL Setup
 Login to the db vm
 $ vagrant ssh db01
