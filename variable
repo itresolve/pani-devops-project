@@ -1,0 +1,8 @@
+SNAP-REPO=pani-snapshot
+NEXUS-USER=admin
+NEXUS-PASS=1qaz2wsx
+RELEASE-REPO=pani-release
+CENTRAL-REPO=pani-maven-central
+NEXUS-GRP-REPO=pani-maven-group
+NEXUSIP=10.10.1.155
+NEXUSPORT=8081
