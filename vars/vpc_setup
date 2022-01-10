@@ -20,3 +20,9 @@ zone2: us-east-1b
 zone3: us-east-1c
 
 state: present
+
+# Use Amazon Linux AMI or a secure one from MarketPlace (Searh CIS)
+bastion_ami: ami-0ed9277fb7eb570c9
+
+#Google your Public IP
+MYIP: 138.88.134.36/32
