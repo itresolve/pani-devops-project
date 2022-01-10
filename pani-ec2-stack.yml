@@ -18,7 +18,10 @@
         name: panikey
         region: "{{region}}"
       register: panikey_out
-
+     
+      #Do push keys in your GIT Repo
+      #vim to .gitignore and and this line "*.pem"
+      #Push and it won't push any file in the .gitignore
     - name: Save private key into file loginkey_pani.pem
       copy:
         content: "{{panikey_out.key.private_key}}"
