@@ -1,6 +1,0 @@
-# Use Amazon Linux AMI or a secure one from MarketPlace (Searh CIS)
-bastion_ami: ami-0ed9277fb7eb570c9
-region: us-east-1
-
-#Google your Public IP
-MYIP: 138.88.134.36/32
