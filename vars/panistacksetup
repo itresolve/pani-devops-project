@@ -1,6 +1,6 @@
-#Will use UBUNTU 18 AMI for all instances 
-nginx_ami: ami-0e472ba40eb589f49
-tomcat_ami: ami-0e472ba40eb589f49
-memcache_ami: ami-0e472ba40eb589f49
-rmq_ami: ami-0e472ba40eb589f49
-mysql_ami: ami-0e472ba40eb589f49
+#Will use UBUNTU 20.04 AMI for all instances 
+nginx_ami: ami-04505e74c0741db8d
+tomcat_ami: ami-04505e74c0741db8d
+memcache_ami: ami-04505e74c0741db8d
+rmq_ami: ami-04505e74c0741db8d
+mysql_ami: ami-04505e74c0741db8d
