@@ -179,8 +179,9 @@
 
     - debug:
         var: db01_out.tagged_instances[0].id
+        # Use [0] because it's a list, will print first element in the list
 
-    - local_action:
+    - local_action: #To Create LB, search for ANSIBLE ec2_elb_lb to see example
         module: ec2_elb_lb
         name: "pani-elb"
         region: "{{region}}"
@@ -198,6 +199,21 @@
             load_balancer_port: 80
             instance_port: 80
 
+    - name: create directory provision-stack if they don't exist
+      file:
+         path: provision-stack
+         state: directory
+
+    - name: create directory provision-stack/group_vars if they don't exist
+      file:
+         path: provision-stack/group_vars
+         state: directory
+
+    - name: create file provision-stack/group_vars/hostsip if they don't exist
+      file:
+         path: provision-stack/group_vars/hostsip
+         state: touch
+
     - name: Insert/Update Hosts IP & Name in file provision-stack/group_vars/hostsip
       blockinfile:
         path: provision-stack/group_vars/hostsip
@@ -207,6 +223,7 @@
           rmq01_ip: {{ rmq01_out.tagged_instances[0].private_ip }}
           mc01_ip: {{ mc01_out.tagged_instances[0].private_ip }}
           db01_ip: {{ db01_out.tagged_instances[0].private_ip }}
+
     - name: Copy login key to provision_stack directory
       copy:
         src: loginkey_pani.pem
@@ -222,7 +239,7 @@
           rmq01 ansible_host={{ rmq01_out.tagged_instances[0].private_ip }}
           mc01 ansible_host={{ mc01_out.tagged_instances[0].private_ip }}
           db01 ansible_host={{ db01_out.tagged_instances[0].private_ip }}
-          cntl ansible_host=127.0.0.1 ansible_connection=local
+          control ansible_host=127.0.0.1 group_varsansible_connection=local
           [websrvgrp]
           web01
           [appsrvgrp]
@@ -234,7 +251,7 @@
           [dbsrvgrp]
           db01
           [control]
-          cntl
+          control
           [stack_inst:children]
           websrvgrp
           appsrvgrp
