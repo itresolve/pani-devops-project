@@ -337,7 +337,7 @@ Install nginx
 ```
 apt install nginx -y
 ```
-Create Nginx conf file with below content (to redirect request from Nginx to Tomcat server)
+Create Nginx conf file with below content (to redirect request from Nginx port 80 to Tomcat server port 8080 so NGINX act as a Load Balance)
 ```
 vi /etc/nginx/sites-available/vproapp
 
