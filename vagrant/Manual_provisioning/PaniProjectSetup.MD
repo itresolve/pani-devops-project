@@ -337,10 +337,9 @@ Install nginx
 ```
 apt install nginx -y
 ```
-Create Nginx conf file with below content
+Create Nginx conf file with below content (to redirect request from Nginx to Tomcat server)
 ```
 vi /etc/nginx/sites-available/vproapp
-```
 
 upstream vproapp {
 server app01:8080;
@@ -351,6 +350,7 @@ location / {
 proxy_pass http://vproapp;
 }
 }
+```
 
 Remove default nginx conf
 ```
