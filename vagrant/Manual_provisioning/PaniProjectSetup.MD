@@ -39,8 +39,8 @@ SQL Database
 
 Setup should be done in below mentioned order
 1. MySQL (Database SVC)
-2. Memcache (DB Caching SVC)
-3. RabbitMQ (Broker/Queue SVC)
+2. Memcache (DB Caching SVC), it's a general-purpose distributed memory-caching system. It is often used to speed up dynamic database-driven websites by caching data and objects in RAM to reduce the number of times an external data source must be read. Memcached is free and open-source software.
+3. RabbitMQ (Broker/Queue SVC), it's an open source message broker software. It accepts messages from producers, and delivers them to consumers. It acts like a middleman which can be used to reduce loads and delivery times taken by web application servers.
 4. Tomcat (Application SVC)
 5. Nginx (Web SVC)
 
