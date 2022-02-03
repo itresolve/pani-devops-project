@@ -4,8 +4,8 @@
 1. Oracle VM Virtualbox
 2. Vagrant
 3. Vagrant plugins
-a. vagrant plugin install vagrant-hostmanager
-b. vagrant plugin install vagrant-vbguest
+- vagrant plugin install vagrant-hostmanager
+- vagrant plugin install vagrant-vbguest
 4. Git bash or equivalent editor
 
 #### VM SETUP
