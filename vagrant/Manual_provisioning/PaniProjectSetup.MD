@@ -116,7 +116,7 @@ Reload privilege tables now? [Y/n] Y
 ##### Download Source code
 ```
 # git clone -b local-setup https://github.com/xxxx
-# cd vprofile-project
+# cd pani-devops-project
 Set DB name and users.
 # mysql -u root -p"$DATABASE_PASS" -e "create database accounts"
 # mysql -u root -p"$DATABASE_PASS" -e "grant all privileges on accounts.* TO 'admin'@'app01' identified by 'admin123' "
