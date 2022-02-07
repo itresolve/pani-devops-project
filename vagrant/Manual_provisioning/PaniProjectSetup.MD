@@ -119,7 +119,7 @@ Reload privilege tables now? [Y/n] Y
 # cd pani-devops-project
 Set DB name and users.
 # mysql -u root -p"$DATABASE_PASS" -e "create database accounts"
-# mysql -u root -p"$DATABASE_PASS" -e "grant all privileges on accounts.* TO 'admin'@'app01' identified by 'admin123' "
+# mysql -u root -p"$DATABASE_PASS" -e "grant all privileges on accounts.* TO 'admin'@'app01' identified by '1qaz2wsx' "
 # mysql -u root -p"$DATABASE_PASS" accounts < src/main/resources/db_backup.sql
 # mysql -u root -p"$DATABASE_PASS" -e "FLUSH PRIVILEGES"
 Restart mariadb-server
