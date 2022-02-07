@@ -251,7 +251,7 @@ Make tomcat user owner of tomcat home dir
 Update file with following content.
 ```
 vi /etc/systemd/system/tomcat.service
-```
+
 [Unit]
 Description=Tomcat
 After=network.target
@@ -267,6 +267,7 @@ ExecStop=/usr/local/tomcat8/bin/shutdown.sh
 SyslogIdentifier=tomcat-%i
 [Install]
 WantedBy=multi-user.target
+```
 
 ```
 systemctl daemon-reload
