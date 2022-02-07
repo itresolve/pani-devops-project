@@ -314,7 +314,7 @@ systemctl start tomcat
 ```
 Wait for about 5 minutes
 ```
-chown -R tomcat.tomcat usr/local/tomcat8/webapps
+chown -R tomcat.tomcat /usr/local/tomcat8/webapps
 systemctl restart tomcat
 ```
 
