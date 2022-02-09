@@ -1,7 +1,7 @@
 # adding repository and installing nginx		
 apt update
 apt install nginx -y
-cat <<EOT > vproapp
+cat <<EOT > /etc/nginx/sites-available/vproapp
 upstream vproapp {
 
  server app01:8080;
